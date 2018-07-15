@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".vendedor.OSDetailActivity">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout_detalle_os"
+        android:layout_width="match_parent"
+        android:layout_height="189dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <TextView
+            android:id="@+id/txtView_nombre_detalle"
+            android:layout_width="192dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="12dp"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/btn_nueva_app"
+            android:layout_width="wrap_content"
+            android:layout_height="58dp"
+            android:layout_alignBottom="@+id/txtView_peso_detalle"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="-9dp"
+            android:layout_marginEnd="12dp"
+            android:text="Nueva App" />
+
+        <TextView
+            android:id="@+id/textView_version_os_det"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="14dp"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="56dp"
+            android:text="Versión"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/textView_instalado_os_det"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/textView_peso_os_det"
+            android:layout_centerHorizontal="true"
+            android:text="Instalado"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/textView_fecha_os_det"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/textView_instalado_os_det"
+            android:layout_alignTop="@+id/textView_version_os_det"
+            android:text="Fecha Lanzamiento"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/textView_peso_os_det"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView_version_os_det"
+            android:layout_alignParentBottom="true"
+            android:layout_alignStart="@+id/textView_version_os_det"
+            android:layout_marginBottom="47dp"
+            android:text="Peso (GB)"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/txtView_version_detalle"
+            android:layout_width="73dp"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/textView_version_os_det"
+            android:layout_centerVertical="true"
+            android:textAlignment="center"
+            android:layout_alignLeft="@+id/textView_version_os_det" />
+
+        <TextView
+            android:id="@+id/txtView_fecha_detalle"
+            android:layout_width="135dp"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/textView_fecha_os_det"
+            android:layout_centerVertical="true"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/txtView_peso_detalle"
+            android:layout_width="72dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignStart="@+id/textView_version_os_det"
+            android:layout_marginBottom="18dp"
+            android:textAlignment="center"
+            android:layout_alignLeft="@+id/textView_version_os_det" />
+
+        <TextView
+            android:id="@+id/txtView_instalado_detalle"
+            android:layout_width="118dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView_instalado_os_det"
+            android:layout_alignStart="@+id/textView_instalado_os_det"
+            android:layout_alignTop="@+id/txtView_peso_detalle"
+            android:textAlignment="center" />
+
+        <View
+            android:id="@+id/divider2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="?android:attr/listDivider" />
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView_detalle_os"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.969" />
+
+</android.support.constraint.ConstraintLayout>

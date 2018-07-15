@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".vendedor.CreateAppActivity">
+
+
+    <RelativeLayout
+        android:layout_width="392dp"
+        android:layout_height="582dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.307"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.492">
+
+        <TextView
+            android:id="@+id/txtView_nombre_app"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignTop="@+id/editText_nombre_app"
+            android:layout_marginStart="22dp"
+            android:text="Nombre"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/txtView_version_app"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/editText_version_app"
+            android:layout_alignStart="@+id/txtView_nombre_app"
+            android:text="Versión"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/txtView_fecha_app"
+            android:layout_width="127dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/editText_fecha_app"
+            android:layout_alignStart="@+id/txtView_nombre_app"
+            android:text="Fecha Lanzamiento"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/textView_peso_os_det"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/editText_peso_app"
+            android:layout_alignStart="@+id/txtView_nombre_app"
+            android:text="Peso (GB)"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/textView_costo_app"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/editText_costo_app"
+            android:layout_alignStart="@+id/txtView_nombre_app"
+            android:text="Costo"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/textView_url_app"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/editText_url_app"
+            android:layout_alignStart="@+id/textView_peso_os_det"
+            android:text="URL"
+            android:textSize="22sp" />
+
+        <EditText
+            android:id="@+id/editText_nombre_app"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="152dp"
+            android:layout_toEndOf="@+id/txtView_fecha_app"
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/editText_version_app"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="211dp"
+            android:layout_toEndOf="@+id/txtView_fecha_app"
+            android:ems="10"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/editText_peso_app"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="197dp"
+            android:layout_toEndOf="@+id/txtView_fecha_app"
+            android:ems="10"
+            android:inputType="numberDecimal" />
+
+        <EditText
+            android:id="@+id/editText_fecha_app"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignStart="@+id/editText_nombre_app"
+            android:layout_marginBottom="255dp"
+            android:ems="10"
+            android:inputType="date" />
+
+        <EditText
+            android:id="@+id/editText_costo_app"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="139dp"
+            android:layout_toEndOf="@+id/txtView_fecha_app"
+            android:ems="10"
+            android:inputType="numberDecimal" />
+
+        <EditText
+            android:id="@+id/editText_url_app"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="80dp"
+            android:layout_toEndOf="@+id/txtView_fecha_app"
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+        <Button
+            android:id="@+id/btn_guardar_app"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="11dp"
+            android:text="Guardar" />
+
+        <ImageView
+            android:id="@+id/imgView_foto_app"
+            android:layout_width="99dp"
+            android:layout_height="101dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="37dp"
+            app:srcCompat="@android:drawable/sym_def_app_icon" />
+
+        <ImageView
+            android:id="@+id/btn_tomar_foto"
+            android:layout_width="37dp"
+            android:layout_height="36dp"
+            android:layout_alignBottom="@+id/imgView_foto_app"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="91dp"
+            app:srcCompat="@drawable/ic_round_add_a_photo_24px" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Aplicación"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+</android.support.constraint.ConstraintLayout>
